@@ -1,0 +1,115 @@
+@use "./styles/variables.scss" as v;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: v.$body-font;
+    font-size: v.$normal-font-size;
+}
+
+body {
+    background-color: v.$body-color;
+    color: v.$text-color;
+}
+
+h1, h2, h3 {
+    color: v.$title-color;
+    font-weight: v.$font-semi-bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 6rem 0 2rem;
+
+    &__title {
+        font-size: v.$h1-font-size;
+        color: v.$title-color;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: v.$small-font-size;
+        margin-bottom: 4rem;
+    }
+
+    &__title, &__subtitle {
+        text-align: center;
+    }
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: v.$title-color;
+    color: v.$container-color;
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    font-size: v.$font-medium;
+
+    &:hover {
+        background-color: v.$title-color-dark;
+    }
+
+    &__icon {
+        margin-left: v.$mb-0-5;
+    }
+
+    &--flex {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: v.$mb-1-5;
+        margin-right: v.$mb-1-5;     
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: v.$mb-1;
+        margin-right: v.$mb-1;     
+    }
+}
