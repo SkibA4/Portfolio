@@ -1,9 +1,15 @@
-import './App.scss';
-import Header from './components/Header';
+import "./App.scss";
+import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <main className="main">
+        <Home />
+      </main>
+    </>
   );
 }
 
