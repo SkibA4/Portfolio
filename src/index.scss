@@ -105,6 +105,16 @@ img {
         margin-left: v.$mb-1-5;
         margin-right: v.$mb-1-5;     
     }
+
+    .button {
+        padding: 1rem 1.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 2rem 0 4rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
