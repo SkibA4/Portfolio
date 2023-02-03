@@ -7,8 +7,9 @@ const Data: FunctionComponent = () => {
       <h1 className="home__title">Kuba</h1>
       <h3 className="home__subtitle">Web developer</h3>
       <p className="home__description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-        necessitatibus voluptatibus tenetur eius vitae cum eum modi nobis
+        A 22-year-old student of control engineering and robotics with a passion
+        for programming, looking for a chance to gain his first commercial
+        experience in IT world!
       </p>
 
       <a href="#contact" className="button button--flex">
